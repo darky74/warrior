@@ -8,7 +8,9 @@
       <tr>
       <td width=33%>
         <img src="{{ $battleField->getMyWarrior()->imageUrl }}" alt="{{ get_class ($battleField->getMyWarrior()) }}" style="width:300px;">
+          <?php echo '<br/>Vie: ' . $battleField->getMyWarrior()->life . '<br/>Pouvoir: ' . $battleField->getMyWarrior()->superPower?>
         <img src="{{ $battleField->getMyWarrior()->weapon->imageUrl }}" alt="Pan !" style="width:100px;">
+
         <div class="meter">
           <span style="width:{{ $battleField->getMyWarrior()->life }}%"></span>
         </div>
